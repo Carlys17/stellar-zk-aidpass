@@ -1,0 +1,22 @@
+{
+  "name": "stellar-zk-aidpass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node src/demo.js",
+    "stellar": "node src/stellar-demo.js",
+    "build": "node scripts/build-readme-check.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@noble/curves": "^2.2.0",
+    "@noble/hashes": "^2.2.0",
+    "@stellar/stellar-sdk": "^16.0.1",
+    "circomlibjs": "^0.1.7"
+  }
+}
