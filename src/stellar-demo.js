@@ -21,7 +21,7 @@ const tx = new TransactionBuilder(accountLike, { fee: BASE_FEE, networkPassphras
 
 console.log(JSON.stringify({
   integration: 'Stellar testnet transaction envelope prepared offline',
-  note: 'In production the Soroban claim contract verifies root/nullifier/proof before releasing XLM/USDC aid.',
+  note: 'Legacy Stellar SDK envelope demo. Hackathon compliance path verifies Groth16 proofs on-chain in Soroban before marking nullifiers spent.',
   verifierVerdict: verdict,
   proofHash,
   sponsorPublicKey: sponsor.publicKey(),

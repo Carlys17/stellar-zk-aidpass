@@ -1,7 +1,7 @@
 {
   "name": "stellar-zk-aidpass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Privacy-preserving aid eligibility claims using Groth16 ZK proofs on Stellar/Soroban",
   "main": "index.js",
   "scripts": {
     "test": "node --test",
@@ -11,11 +11,12 @@
     "prove": "node scripts/generate-aidpass-proof.js",
     "contract:test": "cd contracts/aidpass && cargo test",
     "contract:build": "cd contracts/aidpass && cargo build --target wasm32v1-none --release",
-    "zk:compile": "circom circuits/aidpass.circom --r1cs --wasm --sym -p bls12381 -o circuits/build"
+    "zk:compile": "circom circuits/aidpass.circom --r1cs --wasm --sym -p bls12381 -o circuits/build",
+    "stellar:args": "python scripts/make_stellar_args.py"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Carly Sipahutar <@Carlys17>",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@noble/curves": "^2.2.0",

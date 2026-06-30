@@ -13,8 +13,13 @@ jobs:
         with:
           node-version: 24
           cache: npm
+      - name: Install Rust target for Soroban WASM
+        run: rustup target add wasm32v1-none
       - run: npm ci
       - run: npm test
+      - run: npm run prove
+      - run: npm run contract:test
+      - run: npm run contract:build
       - run: npm run demo
       - run: npm run stellar
       - run: npm run build
