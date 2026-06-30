@@ -5,3 +5,19 @@ node_modules/
 coverage/
 dist/
 .DS_Store
+
+# Rust / Soroban build output
+contracts/aidpass/target/
+contracts/aidpass/Cargo.lock
+contracts/aidpass/test_snapshots/
+
+# ZK generated intermediates (keep final demo proving/verifying artifacts)
+circuits/keys/*.ptau
+circuits/keys/aidpass_0000.zkey
+circuits/build/input.json
+circuits/build/proof.json
+circuits/build/public.json
+circuits/build/*.r1cs
+circuits/build/*.sym
+circuits/build/aidpass_js/generate_witness.js
+circuits/build/aidpass_js/witness_calculator.js

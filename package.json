@@ -7,7 +7,11 @@
     "test": "node --test",
     "demo": "node src/demo.js",
     "stellar": "node src/stellar-demo.js",
-    "build": "node scripts/build-readme-check.js"
+    "build": "node scripts/build-readme-check.js",
+    "prove": "node scripts/generate-aidpass-proof.js",
+    "contract:test": "cd contracts/aidpass && cargo test",
+    "contract:build": "cd contracts/aidpass && cargo build --target wasm32v1-none --release",
+    "zk:compile": "circom circuits/aidpass.circom --r1cs --wasm --sym -p bls12381 -o circuits/build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,8 @@
     "@noble/curves": "^2.2.0",
     "@noble/hashes": "^2.2.0",
     "@stellar/stellar-sdk": "^16.0.1",
-    "circomlibjs": "^0.1.7"
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.6"
   }
 }
