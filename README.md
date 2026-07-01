@@ -1,6 +1,12 @@
 # Stellar ZK AidPass
 
+<p align="center">
+  <img src="assets/aidpass-logo.png" alt="Stellar ZK AidPass logo" width="180" />
+</p>
+
 Privacy-preserving aid/remittance eligibility claims for **Stellar Hacks: Real-World ZK**.
+
+Demo video: https://youtu.be/uS5NaW3B_ME
 
 ## What it does
 
@@ -133,7 +139,7 @@ npm run stellar
 | ZK is load-bearing | Claim is accepted only after proof verification, root check, and nullifier check |
 | Real-world use case | Private eligibility for aid/remittance/compliance-gated payments |
 | Repo required | This GitHub repository |
-| Demo video required | To be recorded for DoraHacks submission |
+| Demo video required | 2:03 DoraHacks walkthrough: https://youtu.be/uS5NaW3B_ME |
 
 ## Security notes / limitations
 
